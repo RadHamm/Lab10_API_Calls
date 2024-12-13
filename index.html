@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 1 API Calls</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1> API Calls Lab</h1>
+    </header>
+    <main>
+        <section class="buttons">
+            <button id="fetchWithFetch">Fetch Data with fetch()</button>
+            <button id="XMLHttpRequest">Fetch Data with XHR</button>
+        </section>
+
+        <section id="displayData">
+            <h2> Fetched Data will appear here:</h2>
+            <div id="dataContainer"></div>
+        </section>
+
+        <section class="form">
+            <h2>Send Data</h2>
+            <form id="apiForm">
+                <label for="title">Post Title:</label>
+                <input type="text" id="title" name="title">
+
+                <label for="body">Post Body:</label>
+                <input type="text" id="body" name="body">
+            
+
+                <label for="postId">Post ID to Update:</label>
+                <input type="number" id="postId" name="postId">
+                
+
+                <button type="submit" id="postButton">Send POST Request</button>
+                <button type="button" id="putButton">Send PUT Request</button>
+                <button type="button" id="deleteButton">Delete Post</button>    
+            </form>
+            <section id="responseMessage"></section>
+            <section id="errorMessage" style="color: red; display: none;">
+
+            </section>
+        </section>
+    </main>
+
+</body>
+</html>
